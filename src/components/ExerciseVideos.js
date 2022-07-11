@@ -3,7 +3,7 @@ import {Box, Stack, Typography} from '@mui/material'
 
 const ExerciseVideos = ({exerciseVideos, name}) => {
 
-  if(!exerciseVideos.length) return 'Loading..'
+  if(!exerciseVideos.length) return ''
 
   return (
     <Box
@@ -29,7 +29,8 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
           rel='noreferrer'>
             <img src={item.video.thumbnails[0].url} alt={item.video.title} loading='lazy' />
             <Box>
-              <Typography variant='h7' textTransform='capitalize' color='rgb(200, 200, 200)'>{item.video.title}</Typography>
+              <Typography variant='h6' textTransform='capitalize' color='rgb(200, 200, 200)'>{item.video.title}</Typography>
+              <Typography fontSize='14px' textTransform='capitalize' color='rgb(200, 200, 200)'>{item.video.channelName}</Typography>
             </Box>
           </a>
         ))}

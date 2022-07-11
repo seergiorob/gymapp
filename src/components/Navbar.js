@@ -2,17 +2,18 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import {Stack} from '@mui/material';
 
-import Logo from '../assets/images/png.png';
+import Logo from '../assets/images/blanco.png';
 
 const Navbar = () => {
   return (
     <Stack
     direction="row"
     justify="space-around"
+    alignItems='center'
     sx={{gap: {sm: '122px', xs: '40px'}, mt: {sm: '32px', xs: '20px'}, justifyContent: 'none'}} px="20px"
     >
       <Link to="/">
-        <img src={Logo} alt="Logo" style={{width: '48px', heigth: '48px', margin: '0 20px'}} />
+        <img src={Logo} alt="Logo" style={{width: '68px', heigth: '68px', margin: '0 20px'}} />
       </Link>
     
     <Stack
@@ -21,8 +22,8 @@ const Navbar = () => {
     fontSize="24px"
     alignItems="flex-end"
     >
-      <Link to="/" style={{textDecoration: 'none', color: '#3a1212', borderBottom: '3px solid #ff2625'}}>Home</Link>
-      <a href="#exercises" style={{textDecoration: 'none', color: '#3a1212'}}>Exercises</a>
+      <Link to="/" style={{textDecoration: 'none', color: 'rgb(200, 200, 200)', borderBottom: '3px solid #ff2625'}}>Home</Link>
+      {/* <a href="#exercises" style={{textDecoration: 'none', color: '#3a1212'}}>Exercises</a> */}
     </Stack>
     </Stack>
   )

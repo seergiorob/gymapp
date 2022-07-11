@@ -17,11 +17,11 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
     }
     
     >
-      <img src={Icon} alt='dumbell' style={{width: '40px', heigth: '40px'}} />
+      {/* <img src={Icon} alt='dumbell' style={{width: '40px', heigth: '40px'}} /> */}
       <Typography
       fontWeight='bold'
-      fontSize='24px'
-      color='#3a1212'
+      fontSize='30px'
+      color='#242424'
       textTransform='capitalize'
       >
         {item}

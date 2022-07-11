@@ -62,8 +62,10 @@ const Exercises = ({exercises, setExercises, bodyPart }) => {
       mt='100px' alignItems='center'
       >
         {exercises.length > 9 && (
-          <Pagination 
-          color='standard'
+          <Pagination
+          
+          variant="outlined"
+          color='primary'
           shape='rounded'
           defaultPage={1}
           count={Math.ceil(exercises.length / exercisesPerPage)}

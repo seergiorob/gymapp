@@ -29,7 +29,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
           rel='noreferrer'>
             <img src={item.video.thumbnails[0].url} alt={item.video.title} loading='lazy' />
             <Box>
-              <Typography variant='h7' textTransform='capitalize' color='#000'>{item.video.title}</Typography>
+              <Typography variant='h7' textTransform='capitalize' color='rgb(200, 200, 200)'>{item.video.title}</Typography>
             </Box>
           </a>
         ))}
